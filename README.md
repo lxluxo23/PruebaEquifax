@@ -1,2 +1,28 @@
-# PruebaEquifax
-simple prueba equifax
+### EQUIFAX
+
+- Pequeña prueba teorica de entrevista laboral para empreza "EQUIFAX"
+- Cabe señalar  que durante el tiempo de la entrevista no logre pensar claramente y luego que termino la entrevista di con el resultado en aproximadamente 10 min 
+
+
+
+
+
+####Código  　
+
+```javascript
+var tamaños = [1, 4, 1, 3, 4, 3, 4];
+
+var m = Math.max.apply(null, tamaños);
+
+function repetidas() {
+  var repetidas = 0;
+  for (var i = 0; i < tamaños.length; i++) {
+    if (tamaños[i] == m) {
+      repetidas++;
+      //console.log(repetidas);
+    }
+  }
+  return repetidas;
+}
+console.log('el mayor es', m, 'y las veces que se repite son: ', repetidas());
+```
