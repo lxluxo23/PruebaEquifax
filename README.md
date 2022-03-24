@@ -48,3 +48,19 @@ for x in velas:
 print ("la vela mas grande es: ",sacarmayor(velas),"y las velas que apagaria serian ",repetidos)
 
 ```
+
+### PHP
+```php
+<?php
+$repetidos=0;
+$velas = array(1,2,3,2,1,3);
+$maximo=max($velas);
+for ($i = 1; $i <=count($velas); $i++) {
+    if ($velas[$i-1]==$maximo){
+        $repetidos=$repetidos+1;
+    }
+
+}
+echo "la cantidad de velas son: ".count($velas)." y las repetidas son : ".$repetidos." con el valor de : ".$maximo
+?>
+```
