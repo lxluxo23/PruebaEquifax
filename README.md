@@ -1,6 +1,6 @@
 ### EQUIFAX
 
-- Pequeña prueba teorica de entrevista laboral para empreza "EQUIFAX"
+- Pequeña prueba teorica de entrevista laboral para empresa "EQUIFAX"
 - Cabe señalar  que durante el tiempo de la entrevista no logre pensar claramente y luego que termino la entrevista di con el resultado en aproximadamente 10 min 
 
 
