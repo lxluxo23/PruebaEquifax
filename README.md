@@ -96,7 +96,7 @@ puts ("la vela mas larga es: #{mayor} y las veces que se repite son #{repetidas}
 import javax.swing.JOptionPane;
 /**
  *
- * @author grupofirma
+ * @author Luis Céspedes
  */
 public class Prueba {
    public static int ObtenerMayor (int lista[]){
