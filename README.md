@@ -182,3 +182,24 @@ end
 
 print("el numero de velas es: ",nvelas," la mayor es: ",mayor ," y se repite: ", repetidos," veces")
 ```
+
+### R
+```r
+velas<-c(1,3,1,2,1,1,2,3,8,4,2,1,3,8)
+maximo<-max(velas)
+repetidos=0
+nveleas=0
+for (i in velas) {
+  nveleas=nveleas+1
+  if (i==maximo){
+    repetidos=repetidos+1
+      }
+  }
+sprintf("el numero de velas es : %d", nveleas)
+sprintf("la mas alta es de: %d", maximo)
+sprintf("y se repite : %d veces", repetidos )
+
+plot(velas, type="o", col="blue", axes = FALSE, ann = FALSE, ylim = range(velas))
+
+
+```
