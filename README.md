@@ -127,7 +127,7 @@ public class Prueba {
 ```
 
 ### C
-```
+```c
 #include <stdio.h>
 
 int ObtenerMayor(int lista[],int tama){
