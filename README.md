@@ -164,8 +164,6 @@ int main(void)
 ```
 ### LUA
 ```lua
--- your code goes here
-
 velas = {1,2,3,1,1,1,2,3}
 mayor = 0 
 repetidos = 0 
