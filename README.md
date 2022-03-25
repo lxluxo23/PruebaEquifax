@@ -125,3 +125,40 @@ public class Prueba {
 }
 
 ```
+
+### C
+```
+#include <stdio.h>
+
+int ObtenerMayor(int lista[],int tama){
+	int mayor = 0;
+	int largo2 = tama;
+	 for(int i = 0; i < largo2; ++i) {
+		 if (lista[i]>mayor){
+			 mayor=lista[i];
+		 }
+	}
+	return mayor;
+}
+int main(void)
+{
+	int velas[] = {1,2,3,1,1,2,3,3,3};
+	int largo = 0;
+	int repetidos = 0;
+	int mayor = 0;
+	largo = sizeof(velas)/sizeof(int);
+	mayor = ObtenerMayor(velas,largo);
+	for(int i = 0; i < largo; ++i) {
+		 if (velas[i] == mayor){
+			 repetidos++;
+		 }
+	}
+	printf("la cantidas de velas son:  %d.\n", largo);
+	printf("la vela mas grande es   %d.\n", mayor);
+	printf("y se repite %d.\n", repetidos);
+	printf("veces ");
+	return 0;
+}
+
+
+```
