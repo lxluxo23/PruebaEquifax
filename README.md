@@ -64,3 +64,35 @@ for ($i = 1; $i <=count($velas); $i++) {
 echo "la cantidad de velas son: ".count($velas)." y las repetidas son : ".$repetidos." con el valor de : ".$maximo
 ?>
 ```
+
+### RUBY
+
+^^^^
+^^
+```ruby
+ velas=[1,2,3,2,1,3]
+repetidas=0
+def obtener_mayor(array)
+    mayor=0
+    for i in array do
+        #puts (i)
+        if i>mayor
+            mayor=i
+        end
+    end
+   mayor
+end
+
+mayor=obtener_mayor(velas)
+for i in velas do 
+    if i==mayor
+        repetidas=repetidas+1
+    end
+   
+end
+
+puts ("la vela mas larga es: #{mayor} y las veces que se repite son #{repetidas}")
+
+```
+
+var tamaños = [1, 4, 1, 3, 4, 3, 4];
