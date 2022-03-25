@@ -162,3 +162,25 @@ int main(void)
 
 
 ```
+### LUA
+```lua
+-- your code goes here
+
+velas = {1,2,3,1,1,1,2,3}
+mayor = 0 
+repetidos = 0 
+nvelas=0
+for i,v in ipairs(velas) do
+	nvelas=nvelas+1
+	if v>mayor then 
+		mayor=v
+	end 
+end
+for i,v in ipairs(velas) do
+	if v==mayor then 
+		repetidos=repetidos+1
+	end 
+end
+
+print("el numero de velas es: ",nvelas," la mayor es: ",mayor ," y se repite: ", repetidos," veces")
+```
