@@ -91,3 +91,37 @@ end
 puts ("la vela mas larga es: #{mayor} y las veces que se repite son #{repetidas}")
 
 ```
+### JAVA 
+```java
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author grupofirma
+ */
+public class Prueba {
+   public static int ObtenerMayor (int lista[]){
+       int mayor=0;
+        for(int i=0;i<lista.length;i++){
+           if (lista[i]>mayor){
+               mayor=lista[i];
+           }
+        }
+        return mayor;
+    }
+    public static void main(String[] args) {
+        int[] velas = new int[]{ 1,2,3,1,2,3,3 };
+        int repetidos=0;
+        int numero;
+        numero=velas.length;
+        //System.out.println(ObtenerMayor(velas));
+       for(int i=0;i<velas.length;i++){
+         if (velas[i]==ObtenerMayor(velas)){
+                repetidos++;
+         }
+        }
+      JOptionPane.showMessageDialog(null, "El numero de velas son: "+ numero +" Y la vela mayor es  "+ObtenerMayor(velas) +" y se repite "+repetidos + " veces");
+    }
+     
+}
+
+```
