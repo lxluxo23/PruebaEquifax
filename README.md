@@ -203,3 +203,34 @@ plot(velas, type="o", col="blue", axes = FALSE, ann = FALSE, ylim = range(velas)
 
 
 ```
+
+###GO
+```GO
+package main
+
+import "fmt"
+
+func main() {
+	mayor := 0
+	repetidos := 0
+	nvelas := 0
+	velas := []int{1, 2, 3, 1, 2, 1, 3}
+	for i := 0; i < len(velas); i++ {
+		nvelas = nvelas + 1
+		if velas[i] > mayor {
+			mayor = velas[i]
+		}
+
+	}
+
+	for i := 0; i < len(velas); i++ {
+		if velas[i] == mayor {
+			repetidos = repetidos + 1
+		}
+
+	}
+	fmt.Println("el numero de velas es:", nvelas, " la mayor es: ", mayor, " y se repite: ", repetidos, " veces")
+
+}
+
+```
